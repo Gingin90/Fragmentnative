@@ -26,14 +26,40 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/contenedor"
-        android:name="com.example.fragmentguide0.QuestionFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="383dp"
         android:layout_height="39dp"
         android:layout_marginTop="2dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/naveproyect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnAbrir"
+        android:layout_width="240dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="40dp"
+        android:text="Abrir"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="182dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="163dp"
+        android:text="Salir"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
